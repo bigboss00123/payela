@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Core Index{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'estilos/tailwind.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <section class="relative bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white rounded-3xl shadow-2xl p-20 flex flex-col md:flex-row items-center md:justify-between opacity-0 transform translate-y-5 animate-fadeInUp overflow-hidden">
+        <div class="max-w-lg md:max-w-xl z-10">
+            <h1 class="text-6xl font-extrabold mb-8 drop-shadow-lg">Processe Pagamentos Online com <span class="text-yellow-300">Mpesa</span> e <span class="text-yellow-300">Emola</span></h1>
+            <p class="text-2xl mb-12 drop-shadow-md">Soluções rápidas, seguras e confiáveis para o seu negócio crescer.</p>
+            <div class="flex gap-8 mb-16">
+                <a href="#" class="bg-yellow-400 text-purple-900 px-10 py-4 rounded-full font-extrabold hover:bg-yellow-300 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">Comece Agora</a>
+                <a href="#" class="border-4 border-yellow-400 text-yellow-400 px-10 py-4 rounded-full font-extrabold hover:bg-yellow-400 hover:text-purple-900 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">Saiba Mais</a>
+            </div>
+            <div class="flex flex-wrap gap-10">
+                <div class="bg-yellow-400 bg-opacity-20 rounded-3xl p-8 flex items-center gap-6 flex-1 min-w-[280px] hover:bg-opacity-30 transition cursor-pointer shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 text-yellow-300 flex-shrink-0 drop-shadow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                    <div>
+                        <h3 class="text-2xl font-extrabold mb-2 drop-shadow">Confiança Garantida</h3>
+                        <p class="text-yellow-100 text-lg">Mais de 10.000 clientes satisfeitos usando nossos serviços.</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-400 bg-opacity-20 rounded-3xl p-8 flex items-center gap-6 flex-1 min-w-[280px] hover:bg-opacity-30 transition cursor-pointer shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 text-yellow-300 flex-shrink-0 drop-shadow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                    <div>
+                        <h3 class="text-2xl font-extrabold mb-2 drop-shadow">Oferta Limitada</h3>
+                        <p class="text-yellow-100 text-lg">Cadastre-se hoje e aproveite condições exclusivas!</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-400 bg-opacity-20 rounded-3xl p-8 flex items-center gap-6 flex-1 min-w-[280px] hover:bg-opacity-30 transition cursor-pointer shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <svg class="w-12 h-12 text-yellow-300 flex-shrink-0 drop-shadow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2l9 21H3L12 2z"/></svg>
+                    <div>
+                        <h3 class="text-2xl font-extrabold mb-2 drop-shadow">Benefícios Exclusivos</h3>
+                        <p class="text-yellow-100 text-lg">Taxas competitivas e suporte 24/7 para seu negócio crescer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute -right-40 -bottom-40 w-96 h-96 bg-yellow-400 rounded-full filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute -left-40 -top-40 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-purple-600 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+    </section>
+
+{% endblock %}
